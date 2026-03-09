@@ -52,6 +52,10 @@ def IncidenceGraphColoring {S : IncidenceSystem X I} :
     (IncidenceGraph S).Coloring I := sorry
 
 
+
+
+
+
 /- A flag is a set of pairwise incident elements -/
 def IsFlag (F : Set X) (S : IncidenceSystem X I) : Prop :=
   F ⊆ S.points ∧ ∀ x ∈ F, ∀ y ∈ F, S.incidence x y
